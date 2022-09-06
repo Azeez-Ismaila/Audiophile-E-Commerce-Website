@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Earphones from "./Components/Earphones";
+import Footer from "./Components/Footer";
+import Headphones from "./Components/Headphones";
+import Homepage from "./Components/Homepage";
+import MarkTwoHeadphone from "./Components/MarkTwoHeadphone";
+import Nav from "./Components/Nav";
+import Products from "./Components/Products";
+import ProductShop from "./Components/ProductShop";
+import Speakers from "./Components/Speakers";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Homepage />
+      {/* <Headphones /> */}
+      {/* <MarkTwoHeadphone /> */}
+      {/* <Speakers /> */}
+      {/* <Earphones /> */}
+      <ProductShop />
+      <Products />
+      <Footer />
     </div>
   );
 }
